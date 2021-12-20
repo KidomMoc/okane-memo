@@ -21,6 +21,7 @@ public interface DataSource {
 
     Flowable<List<Record>> getRecordByMonth(int year, int month);
 
+
     Completable insertRecord(Record record);
 
     Completable updateRecord(Record record);

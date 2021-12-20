@@ -25,6 +25,8 @@
         android:scaleType="fitCenter"
         android:src="@mipmap/btn_back" />
 
+
+
     <TextView
         android:id="@+id/pie_chart_datePicker"
         android:layout_width="wrap_content"
@@ -37,17 +39,24 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="sans" />
-  </RelativeLayout>
 
-  <lecho.lib.hellocharts.view.PieChartView
-      android:id="@+id/pie_chart"
-      android:layout_width="match_parent"
-      android:layout_height="300dp"
-      android:layout_below="@id/pie_chart_top"
-      android:layout_alignParentTop="true"
-      android:layout_centerHorizontal="true"
-      android:layout_marginTop="96dp"
-       />
+  </RelativeLayout>
+  <ScrollView
+      android:id="@+id/scrollView2"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pie_chart_top"
+        android:orientation="vertical">
+
+      <include layout="@layout/chart" />
+
+    </LinearLayout>
+  </ScrollView>
+
 
 
 </RelativeLayout>

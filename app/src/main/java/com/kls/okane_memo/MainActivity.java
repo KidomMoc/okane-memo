@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements
         Intent intent = null;
         switch (view.getId()) {
             case R.id.btn_pie_chart:
-                intent = new Intent(MainActivity.this, PieChartActivity.class);
+                intent = new Intent(MainActivity.this, ChartActivity.class);
                 startActivity(intent);
                 overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
                 break;

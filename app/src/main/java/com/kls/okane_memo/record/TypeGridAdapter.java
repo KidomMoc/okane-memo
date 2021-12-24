@@ -1,4 +1,4 @@
-package com.kls.okane_memo.util.type;
+package com.kls.okane_memo.record;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.kls.okane_memo.R;
 import com.kls.okane_memo.SingleRecordActivity;
+import com.kls.okane_memo.util.type.TypeBean;
+import com.kls.okane_memo.util.type.TypeList;
 
 public class TypeGridAdapter extends RecyclerView.Adapter<TypeGridAdapter.GridViewHolder> {
     private Context mContext;
